@@ -7,7 +7,15 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        zentry: ["zentry", "sanf-sarif"],
+        general: ["general", "sanf-sarif"],
+        "circular-web": ["circular-web", "sanf-sarif"],
+        "robert-medium": ["robert-medium", "sanf-sarif"],
+        "robert-regular": ["robert-regular", "sanf-sarif"],
+      },
+    },
   },
   plugins: [],
 };
