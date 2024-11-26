@@ -1,9 +1,18 @@
-import React from 'react'
+"use client"
+import React, { useRef } from "react";
+
 
 const Navbar = () => {
-  return (
-    <div>Navbar</div>
-  )
-}
+  const navContainerRef = useRef(null);
 
-export default Navbar
+  return (
+    <div
+      ref={navContainerRef}
+      className="fixed inset-x-0 top-4 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6"
+    >
+      Navbar
+    </div>
+  );
+};
+
+export default Navbar;
