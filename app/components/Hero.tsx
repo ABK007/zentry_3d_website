@@ -21,7 +21,9 @@ const Hero = () => {
 
   const handleVideoLoad = () => {
     setLoadedVideos((prev) => prev + 1);
-    loading
+    if (loading) {
+      console.log("Videos are still loading");
+    }
   };
 
   useEffect(() => {
