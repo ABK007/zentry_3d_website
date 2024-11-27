@@ -21,7 +21,7 @@ const Hero = () => {
 
   const handleVideoLoad = () => {
     setLoadedVideos((prev) => prev + 1);
-    {loading}
+    loading
   };
 
   useEffect(() => {
